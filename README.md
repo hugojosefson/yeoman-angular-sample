@@ -15,7 +15,7 @@ I have run `yeoman init angular`, and then added my own changes on top of that. 
 1. <strike>Add complete Twitter Bootstrap, including JS components and jQuery.</strike>
 1. <strike>Write a README.md.</strike>
 1. Structure folders per application feature, rather than per component type. I.e. keep everything about the `menu` in one directory. This includes service, controller, view. See `angular-sprout` for inspiration.
+1. Make each script have an anonymous self-invoking function, wrapping its contents.
 1. Keep unit tests in the same folder as the rest of the code.
 1. Keep scenario tests in the same folder as the rest of the code.
 1. Fetch vendor scripts with `bower` if they are not available via CDN.
-1. Build scripts so they are separated with each an anonymous self-invoking function.
