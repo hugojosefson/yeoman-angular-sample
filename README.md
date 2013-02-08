@@ -28,8 +28,10 @@ The resulting webapp is then available in the `dist/` directory.
 1. <strike>Use CDN.</strike>
 1. <strike>Add complete Twitter Bootstrap, including JS components and jQuery.</strike>
 1. <strike>Write a README.md.</strike>
+1. Get rid of globally declared variables. Angular modules should be the only global thing.
 1. Structure folders per application feature, rather than per component type. I.e. keep everything about the `menu` in one directory. This includes service, controller, view. See `angular-sprout` for inspiration.
 1. Make each script have an anonymous self-invoking function, wrapping its contents.
 1. Keep unit tests in the same folder as the rest of the code.
 1. Keep scenario tests in the same folder as the rest of the code.
+1. Don't require developer to add `<script src...` tag for every `.js` file. Find and build them all together, starting with the ones which declarare modules, so that the modules are available when the other files reference them to add stuff into them. Make sure `yeoman server` and stuff still works.
 1. Fetch vendor scripts with `bower` if they are not available via CDN.
