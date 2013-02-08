@@ -30,7 +30,7 @@ The resulting webapp is then available in the `dist/` directory.
 1. <strike>Write a README.md.</strike>
 1. <strike>Get rid of globally declared variables. Angular modules should be the only global thing.</strike>
 1. <strike>Make each script have an anonymous self-invoking function, wrapping its contents.</strike>
-1. Use shorter names for services, controllers etc.
+1. <strike>Use shorter names for services, controllers etc.</strike>
 1. Structure folders per application feature, rather than per component type. I.e. keep everything about the `menu` in one directory. This includes service, controller, view. See `angular-sprout` for inspiration.
 1. Keep unit tests in the same folder as the rest of the code.
 1. Keep scenario tests in the same folder as the rest of the code.
