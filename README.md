@@ -8,6 +8,20 @@ I have run `yeoman init angular`, and then added my own changes on top of that. 
 
     npm install -g yeoman testacular
 
+## Run server locally
+
+    yeoman server
+
+## Run tests
+
+    yeoman test
+
+## Build for deployment
+
+    yeoman build
+
+The resulting webapp is then available in the `dist/` directory.
+
 ## TODO
 
 1. <strike>Add a .gitignore file.</strike>
