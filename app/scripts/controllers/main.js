@@ -1,9 +1,9 @@
 'use strict';
 (function (angular) {
 
-    var app = angular.module('yeomanAngularSampleApp');
+    var app = angular.module('yeomanAngularSample');
 
-    app.controller('MainCtrl', ['$scope', function ($scope) {
+    app.controller('main', ['$scope', function ($scope) {
         $scope.awesomeThings = [
             'HTML5 Boilerplate',
             'AngularJS',

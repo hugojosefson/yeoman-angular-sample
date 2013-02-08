@@ -1,13 +1,13 @@
 'use strict';
 (function (angular) {
 
-    var app = angular.module('yeomanAngularSampleApp', []);
+    var app = angular.module('yeomanAngularSample', []);
 
     app.config(['$routeProvider', function ($routeProvider) {
         $routeProvider
             .when('/', {
                 templateUrl: 'views/main.html',
-                controller: 'MainCtrl'
+                controller: 'main'
             })
             .otherwise({
                 redirectTo: '/'

@@ -1,17 +1,17 @@
 'use strict';
 
-describe('Controller: MainCtrl', function() {
+describe('Controller: main', function() {
 
   // load the controller's module
-  beforeEach(module('yeomanAngularSampleApp'));
+  beforeEach(module('yeomanAngularSample'));
 
-  var MainCtrl,
+  var mainController,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function($controller) {
     scope = {};
-    MainCtrl = $controller('MainCtrl', {
+    mainController = $controller('main', {
       $scope: scope
     });
   }));
