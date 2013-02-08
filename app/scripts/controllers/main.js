@@ -1,9 +1,9 @@
 'use strict';
 
-yeomanAngularSampleApp.controller('MainCtrl', function($scope) {
+yeomanAngularSampleApp.controller('MainCtrl', ['$scope', function($scope) {
   $scope.awesomeThings = [
     'HTML5 Boilerplate',
     'AngularJS',
     'Testacular'
   ];
-});
+}]);
