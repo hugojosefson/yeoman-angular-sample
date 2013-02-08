@@ -1,10 +1,14 @@
 'use strict';
+(function (angular) {
 
-angular.module('yeomanAngularSampleApp')
-  .controller('MainCtrl', function ($scope) {
+  var app = angular.module('yeomanAngularSampleApp');
+
+  app.controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
   });
+
+})(window.angular);

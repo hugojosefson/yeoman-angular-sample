@@ -1,7 +1,9 @@
 'use strict';
+(function (angular) {
 
-angular.module('yeomanAngularSampleApp', [])
-  .config(function ($routeProvider) {
+  var app = angular.module('yeomanAngularSampleApp', []);
+
+  app.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -11,3 +13,5 @@ angular.module('yeomanAngularSampleApp', [])
         redirectTo: '/'
       });
   });
+
+})(window.angular);
