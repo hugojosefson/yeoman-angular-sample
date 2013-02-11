@@ -12,14 +12,14 @@ module.exports = function( grunt ) {
 
     // specify an alternate install location for Bower
     bower: {
-      dir: 'app/components'
+      dir: 'app/common/vendor/components'
     },
 
     // Coffee to JS compilation
     coffee: {
       compile: {
         files: {
-          'app/scripts/*.js': 'app/scripts/**/*.coffee',
+          'app/scripts/*.js': 'app/**/*.coffee',
           'test/spec/*.js': 'test/spec/**/*.coffee'
         }
       }
@@ -47,7 +47,7 @@ module.exports = function( grunt ) {
     // default watch configuration
     watch: {
       coffee: {
-        files: 'app/scripts/**/*.coffee',
+        files: 'app/**/*.coffee',
         tasks: 'coffee reload'
       },
       compass: {
@@ -59,9 +59,9 @@ module.exports = function( grunt ) {
       reload: {
         files: [
           'app/*.html',
-          'app/styles/**/*.css',
-          'app/scripts/**/*.js',
-          'app/views/**/*.html',
+          'app/**/*.css',
+          'app/**/*.js',
+          'app/**/*.html',
           'app/images/**/*'
         ],
         tasks: 'reload'
@@ -73,7 +73,7 @@ module.exports = function( grunt ) {
     lint: {
       files: [
         'Gruntfile.js',
-        'app/scripts/**/*.js',
+        'app/**/*.js',
         'spec/**/*.js'
       ]
     },
@@ -124,7 +124,7 @@ module.exports = function( grunt ) {
     // renames JS/CSS to prepend a hash of their contents for easier
     // versioning
     rev: {
-      js: 'scripts/**/*.js',
+      js: './**/*.js',
       css: 'styles/**/*.css',
       img: 'images/**'
     },
@@ -161,7 +161,7 @@ module.exports = function( grunt ) {
     rjs: {
       // no minification, is done by the min task
       optimize: 'none',
-      baseUrl: './scripts',
+      baseUrl: '.',
       wrap: true
     }
   });
