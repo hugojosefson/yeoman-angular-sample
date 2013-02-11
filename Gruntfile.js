@@ -1,4 +1,4 @@
-module.exports = function( grunt ) {
+module.exports = function (grunt) {
   'use strict';
   //
   // Grunt configuration:
@@ -40,7 +40,7 @@ module.exports = function( grunt ) {
     },
 
     // generate application cache manifest
-    manifest:{
+    manifest: {
       dest: ''
     },
 
@@ -166,12 +166,25 @@ module.exports = function( grunt ) {
     }
   });
 
-  // Alias the `test` task to run `testacular` instead
-  grunt.registerTask('test', 'run the testacular test driver', function () {
+  // Alias the `test` task to run `unit-test` instead
+  grunt.registerTask('test', ['unit-test']);
+
+  // Alias the `unit-test` task to run unit tests with `testacular`
+  grunt.registerTask('unit-test', 'run unit tests with the testacular test driver', function () {
     var done = this.async();
-    require('child_process').exec('testacular start --single-run', function (err, stdout) {
+    require('child_process').exec('testacular start config/testacular-unit.conf.js --single-run', function (err, stdout) {
       grunt.log.write(stdout);
       done(err);
     });
   });
+
+  // Alias the `scenario-test` task to run scenario tests with `testacular`
+  grunt.registerTask('scenario-test', 'run scenario tests with the testacular test driver', function () {
+    var done = this.async();
+    require('child_process').exec('testacular start config/testacular-scenario.conf.js --single-run', function (err, stdout) {
+      grunt.log.write(stdout);
+      done(err);
+    });
+  });
+
 };
