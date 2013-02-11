@@ -34,5 +34,6 @@ The resulting webapp is then available in the `dist/` directory.
 1. Structure folders per application feature, rather than per component type. For example keep everything about the `menu` in one directory. This includes service, controller, view. Take inspiration and example code from [thedigitalself/angular-sprout](https://github.com/thedigitalself/angular-sprout).
 1. Keep unit tests in the same folder as the rest of the code.
 1. Keep scenario tests in the same folder as the rest of the code.
+1. Split up `css` files, so there can be one in every directory if desired.
 1. Don't require developer to add `<script src...` tag for every `.js` file. Find and build them all together, starting with the ones which declarare modules, so that the modules are available when the other files reference them to add stuff into them. Make sure `yeoman server` and stuff still works.
 1. Fetch vendor scripts with `bower` if they are not available via CDN.
