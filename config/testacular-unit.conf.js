@@ -6,8 +6,8 @@ files = [
   'test/vendor/angular.js',
   'test/vendor/angular-mocks.js',
 
-  'app/common/app-module-declaration.js',
-  'app/*/*.js'
+  'app/**/*-module-declaration.js',
+  'app/**/*.js'
 
 ];
 

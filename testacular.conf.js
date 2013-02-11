@@ -11,10 +11,8 @@ files = [
   JASMINE_ADAPTER,
   'test/vendor/angular.js',
   'test/vendor/angular-mocks.js',
-  'app/scripts/*.js',
-  'app/scripts/**/*.js',
-  'test/mock/**/*.js',
-  'test/spec/**/*.js'
+  'app/**/*-module-declaration.js',
+  'app/**/*.js'
 ];
 
 
@@ -57,6 +55,7 @@ autoWatch = false;
 // - Opera
 // - Safari
 // - PhantomJS
+//browsers = ['PhantomJS', 'Chrome', 'ChromeCanary', 'Opera', 'Firefox', 'Safari'];
 browsers = ['PhantomJS'];
 
 
