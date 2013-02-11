@@ -14,7 +14,7 @@
         return function (timeStamp) {
             var date;
             date = new Date(parseInt(timeStamp));
-            return date.toLocaleDateString();
+            return date.toLocaleDateString("en");
         }
     });
 

@@ -6,7 +6,7 @@ describe('To date string filter', function() {
     beforeEach(function(){
         
         //We laod all the module dependancies up front.
-    	module('application.filters', 'application.services', 'application.controllers', 'application.directives' , 'application.constants');
+    	module('yeomanAngularSample');
 
         //Injecting all of our dependancies in the "beforeEach" section allows us to avoid cluttering out tests. 	
     	inject(function($filter){
