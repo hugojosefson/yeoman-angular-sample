@@ -38,3 +38,4 @@ The resulting webapp is then available in the `dist/` directory.
 1. Split up `css` files, so there can be one in every directory if desired.
 1. Don't require developer to add `<script src...` tag for every `.js` file. Find and build them all together, starting with the ones which declarare modules, so that the modules are available when the other files reference them to add stuff into them. Make sure `yeoman server` and stuff still works.
 1. Fetch vendor scripts with `bower` if they are not available via CDN.
+1. Consolidate all built files under one directory, for example `target` to make cleaning and `.gitignore`ing simpler.
