@@ -37,7 +37,16 @@
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.js"></script>
 
         <!-- build:js scripts/scripts.js -->
+
+        <!-- First, declare all modules. -->
+        <!-- TODO: This should be done with glob "**/*-module-declaration.js" -->
+        <!-- TODO: Globbing requires https://github.com/yeoman/grunt-usemin/issues/37 -->
         <script src="common/app-module-declaration.js"></script>
+
+        <!-- Then, add all the rest of the files, which hook in to the existing module(s). -->
+        <!-- TODO: This should be done with glob "**/*.js", except "**/*-test.js" -->
+        <!-- TODO: Globbing requires https://github.com/yeoman/grunt-usemin/issues/37 -->
+        <!-- TODO: I have not found a planned feature for supporting exceptions. May need to do this differently.  -->
         <script src="common/routing.js"></script>
         <script src="common/configuration-constants.js"></script>
         <script src="date-time/to-date-string-filter.js"></script>
@@ -46,6 +55,7 @@
         <script src="menu/menu-controller.js"></script>
         <script src="menu/menu-item-directive.js"></script>
         <script src="menu/menu-service.js"></script>
+
         <!-- endbuild -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
