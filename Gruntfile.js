@@ -1,3 +1,5 @@
+var connect = require('connect');
+
 module.exports = function (grunt) {
   'use strict';
   //
@@ -179,11 +181,29 @@ module.exports = function (grunt) {
   });
 
   // Alias the `scenario-test` task to run scenario tests with `testacular`
-  grunt.registerTask('scenario-test', 'run scenario tests with the testacular test driver', function () {
+  grunt.registerTask('scenario-test', [
+    'clean:server',
+    'coffee',
+    'compass',
+    'do-scenario-test'
+  ]);
+
+  var startServer = function (dir, port) {
+    return connect()
+      .use(connect.logger('dev'))
+      .use(connect.static(require('path').resolve(dir)))
+      .listen(port);
+  };
+
+  // Alias the `do-scenario-test` task to actually run scenario tests
+  grunt.registerTask('do-scenario-test', 'actually run scenario tests with the testacular test driver', function () {
     var done = this.async();
+    var app = startServer('app', 9000);
     require('child_process').exec('testacular start config/testacular-scenario.conf.js --single-run', function (err, stdout) {
       grunt.log.write(stdout);
-      done(err);
+      app.close(function () {
+        done(err);
+      });
     });
   });
 

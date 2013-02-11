@@ -63,7 +63,7 @@ browsers = ['PhantomJS'];
 singleRun = false;
 
 proxies = {
-  '/': 'http://localhost:3501/'
+  '/': 'http://localhost:9000/'
 };
 
 urlRoot = '/__testacular/';
