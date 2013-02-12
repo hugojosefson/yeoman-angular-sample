@@ -36,7 +36,12 @@ The resulting webapp is then available in the `dist/` directory.
 1. <strike>Keep scenario tests in the same folder as the rest of the code.</strike>
 1. <strike>Make `yeoman scenario-test` launch `yeoman server` (or equivalent) during test run, [example](http://stackoverflow.com/a/11943814/96301).</strike>
 1. Split up `css` files, so there can be one in every directory if desired.
-1. Don't require developer to add `<script src...` tag for every `.js` file. Find and build them all together, starting with the ones which declarare modules, so that the modules are available when the other files reference them to add stuff into them. Make sure `yeoman server` and stuff still works.
+1. Make sure `scss` and `sass` are compiled to `css` and work.
+1. Add support for `less` compilation to `css`.
+1. Make sure `bower` works and scripts included in `components.json` are installed and made available correctly.
 1. Fetch vendor scripts with `bower` if they are not available via CDN.
-1. Consolidate all built files under one directory, for example `target` to make cleaning and `.gitignore`ing simpler.
 1. Create a `yeoman-generator` for generating and maintaining projects based on this sample.
+
+### Optional / Later
+1. Consolidate all built files and directories under one directory, for example `target` to make cleaning and `.gitignore`ing simpler.
+1. Don't require developer to add `<script src...` tag for every `.js` file. Find and build them all together, starting with the ones which declarare modules, so that the modules are available when the other files reference them to add stuff into them. Make sure `yeoman server` and stuff still works.
