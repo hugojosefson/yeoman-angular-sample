@@ -36,7 +36,7 @@ The resulting webapp is then available in the `dist/` directory.
 1. <strike>Keep scenario tests in the same folder as the rest of the code.</strike>
 1. <strike>Make `yeoman scenario-test` launch `yeoman server` (or equivalent) during test run, [example](http://stackoverflow.com/a/11943814/96301).</strike>
 1. Split up `css` files, so there can be one in every directory if desired.
-1. Make sure `scss` and `sass` are compiled to `css` and work.
+1. Make sure `scss` and `sass` are compiled from any directory to `css`.
 1. Make sure `bower` works and scripts included in `components.json` are installed and made available correctly.
 1. Fetch vendor scripts with `bower` if they are not available via CDN.
 1. Create a `yeoman-generator` for generating and maintaining projects based on this sample.
