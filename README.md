@@ -24,17 +24,17 @@ The resulting webapp is then available in the `dist/` directory.
 
 ## TODO
 
-1. <strike>Add a .gitignore file.</strike>
-1. <strike>Use CDN.</strike>
-1. <strike>Add complete Twitter Bootstrap, including JS components and jQuery.</strike>
-1. <strike>Write a README.md.</strike>
-1. <strike>Get rid of globally declared variables. Angular modules should be the only global thing.</strike>
-1. <strike>Make each script have an anonymous self-invoking function, wrapping its contents.</strike>
-1. <strike>Use shorter names for services, controllers etc.</strike>
-1. <strike>Structure folders per application feature, rather than per component type. For example keep everything about the `menu` in one directory. This includes service, controller, view. Take inspiration and example code from [thedigitalself/angular-sprout](https://github.com/thedigitalself/angular-sprout).</strike>
-1. <strike>Keep unit tests in the same folder as the rest of the code.</strike>
-1. <strike>Keep scenario tests in the same folder as the rest of the code.</strike>
-1. <strike>Make `yeoman scenario-test` launch `yeoman server` (or equivalent) during test run, [example](http://stackoverflow.com/a/11943814/96301).</strike>
+1. ~~Add a .gitignore file.~~
+1. ~~Use CDN.~~
+1. ~~Add complete Twitter Bootstrap, including JS components and jQuery.~~
+1. ~~Write a README.md.~~
+1. ~~Get rid of globally declared variables. Angular modules should be the only global thing.~~
+1. ~~Make each script have an anonymous self-invoking function, wrapping its contents.~~
+1. ~~Use shorter names for services, controllers etc.~~
+1. ~~Structure folders per application feature, rather than per component type. For example keep everything about the `menu` in one directory. This includes service, controller, view. Take inspiration and example code from [thedigitalself/angular-sprout](https://github.com/thedigitalself/angular-sprout).~~
+1. ~~Keep unit tests in the same folder as the rest of the code.~~
+1. ~~Keep scenario tests in the same folder as the rest of the code.~~
+1. ~~Make `yeoman scenario-test` launch `yeoman server` (or equivalent) during test run, [example](http://stackoverflow.com/a/11943814/96301).~~
 1. Split up `css` files, so there can be one in every directory if desired.
 1. Make sure `css`, `scss` and `sass` are compiled from any directory to one `css` file.
 1. Make sure `bower` works and scripts included in `components.json` are installed and made available correctly.
