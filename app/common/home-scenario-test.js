@@ -2,17 +2,17 @@
 
 describe('The home page', function () {
 
-  beforeEach(function () {
+    beforeEach(function () {
 
-    return browser().navigateTo('/index.html');
+        return browser().navigateTo('/index.html');
 
-  });
+    });
 
 
-  it('display the correct url', function () {
+    it('display the correct url', function () {
 
-    expect(browser().location().path()).toBe('');
+        expect(browser().location().path()).toBe('');
 
-  });
+    });
 
 });

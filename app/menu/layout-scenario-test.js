@@ -2,23 +2,23 @@
 
 describe('The layout', function () {
 
-  var i, views = [
-    '/index.html',
-    '/index.html#/item_1',
-    '/index.html#/item_2'
-  ];
+    var i, views = [
+        '/index.html',
+        '/index.html#/item/item_1',
+        '/index.html#/item/item_2'
+    ];
 
-  for (i = 0; i < views.length; i++) {
+    for (i = 0; i < views.length; i++) {
 
-    (function (view) {
+        (function (view) {
 
-      it('should display a menu in the "' + view + '" view', function () {
+            it('should display a menu in the "' + view + '" view', function () {
 
-        browser().navigateTo(view);
-        expect(element('ul.menu').count()).toBe(1);
+                browser().navigateTo(view);
+                expect(element('ul.menu').count()).toBe(1);
 
-      });
+            });
 
-    })(views[i])
-  }
+        })(views[i])
+    }
 });

@@ -10,7 +10,7 @@
         return {
             restrict: 'E',
             replace: true,
-            templateUrl: 'menu/menu-item-template.html',
+            templateUrl: '/menu/menu-item-template.html',
             scope: {
                 id: '=id',
                 name: '=name'

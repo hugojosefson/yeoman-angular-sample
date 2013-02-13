@@ -43,7 +43,7 @@ describe('Menu controller', function () {
             $provide.value('menu', mockMenu);
         });
 
-        //Injecting all of our services in the "beforeEach" section allows us to avoid cluttering out tests. 	
+        //Injecting all of our services in the "beforeEach" section allows us to avoid cluttering out tests.
         inject(function ($injector, $controller) {
             $q = $injector.get('$q');
             $rootScope = $injector.get('$rootScope');

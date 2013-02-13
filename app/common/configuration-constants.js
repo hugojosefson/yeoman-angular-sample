@@ -7,7 +7,7 @@
      * Defines application-wide key value pairs.
      */
     app.constant('configuration', {
-        ITEMS_URL: 'menu/items.json'
+        ITEMS_URL: '/menu/items.json'
     });
 
 })(window.angular);
