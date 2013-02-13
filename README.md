@@ -35,7 +35,7 @@ The resulting webapp is then available in the `dist/` directory.
 1. ~~Keep unit tests in the same folder as the rest of the code.~~
 1. ~~Keep scenario tests in the same folder as the rest of the code.~~
 1. ~~Make `yeoman scenario-test` launch `yeoman server` (or equivalent) during test run, [example](http://stackoverflow.com/a/11943814/96301).~~
-1. Use HTML5 History API.
+1. ~~Use HTML5 History API.~~
 1. Split up `css` files, so there can be one in every directory if desired.
 1. Make sure `css`, `scss` and `sass` are compiled from any directory to one `css` file.
 1. Make sure `bower` works and scripts included in `components.json` are installed and made available correctly.
