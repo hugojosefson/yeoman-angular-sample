@@ -46,3 +46,9 @@ The resulting webapp is then available in the `dist/` directory.
 1. Consolidate all built files and directories under one directory, for example `target` to make cleaning and `.gitignore`ing simpler.
 1. Don't require developer to add `<script src...` tag for every `.js` file. Find and build them all together, starting with the ones which declarare modules, so that the modules are available when the other files reference them to add stuff into them. Make sure `yeoman server` and stuff still works.
 1. Add support for `less` compilation to `css`.
+
+## (Possibly) Related issues / resources
+
+* https://github.com/yeoman/yeoman/issues/661
+* https://github.com/yeoman/grunt-usemin/issues/37
+* http://stackoverflow.com/questions/12632029/grunt-minimatch-glob-folder-exclusion
