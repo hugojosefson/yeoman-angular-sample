@@ -3,6 +3,13 @@ var lrSnippet = require('grunt-contrib-livereload/lib/utils').livereloadSnippet;
 var mountFolder = function (connect, dir) {
   return connect.static(require('path').resolve(dir));
 };
+var indexHtml = function (connect, dir) {
+  var send = require('send');
+  var pathToIndexHtml = require('path').resolve(dir) + '/index.html';
+  return function (req, res, next) {
+    send(req, pathToIndexHtml).pipe(res);
+  };
+};
 
 module.exports = function (grunt) {
   // load all grunt tasks
@@ -53,7 +60,8 @@ module.exports = function (grunt) {
             return [
               lrSnippet,
               mountFolder(connect, '.tmp'),
-              mountFolder(connect, yeomanConfig.app)
+              mountFolder(connect, yeomanConfig.app),
+              indexHtml(connect, yeomanConfig.app)
             ];
           }
         }
